@@ -1,0 +1,642 @@
+    section.header {
+        background-color: rgb(4, 11, 20);
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        z-index: 9997;
+        width: 300px;
+        transition: all 0.5s ease 0s;
+        padding: 15px 0px;
+    }
+
+    .show-sidebar {
+        display: none;
+    }
+    .hero-container{
+        position: relative;
+        bottom: 100px;
+        right: 70px;
+        text-align: center;
+        background: rgba(255,255,255,0.5);
+        width: 40%;
+        /* padding-left: 71px; */
+        margin-right: 150px;
+    }
+    .container {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    /* .profile{
+        display: block;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+        width: 100px;
+    } */
+    #hero p span {
+        font-family: "Poppins", sans-serif;
+        color: #111;
+        font-size: 1em;
+        animation: glowing 2s linear infinite;
+    }
+
+    @keyframes glowing {
+        0%, 100% {
+            color: #fff;
+            filter: blur(2px);
+            text-shadow: 0 0 10px #00b3ff,
+                0 0 20px #00b3ff,
+                0 0 40px #00b3ff,
+                0 0 80px #00b3ff,
+                0 0 120px #00b3ff,
+                0 0 200px #00b3ff,
+                0 0 300px #00b3ff,
+                0 0 400px #00b3ff;
+        }
+
+        5%, 95% {
+            color: #111;
+            text-shadow: none;
+            filter: blur(0px);
+        }
+    }
+
+    p span:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    p span:nth-child(2) {
+        animation-delay: .25s;
+    }
+
+    p span:nth-child(3) {
+        animation-delay: .5s;
+    }
+
+    p span:nth-child(4) {
+        animation-delay: .75s;
+    }
+
+    p span:nth-child(5) {
+        animation-delay: 1s;
+    }
+
+    p span:nth-child(6) {
+        animation-delay: 1.25s;
+    }
+
+    p span:nth-child(7) {
+        animation-delay: 1.5s;
+    }
+
+    p span:nth-child(8) {
+        animation-delay: 1.75s;
+    }
+
+    img.rounded-circle {
+        width: 80px;
+        margin: 15px auto;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        object-fit: cover;
+        object-position: 20% 40%;
+    }
+
+    h1.profile-name {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+        text-align-last: center;
+    }
+
+    h1.profile-name a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+    .social-media a {
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        margin-right: 10px;
+        padding: 5px 8px;
+        text-decoration: none;
+        background-color: rgb(33, 36, 49);
+        display: inline-block;
+        border-radius: 20px;
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+
+    }
+
+    .social-media a:hover {
+        color: rgb(255, 255, 255);
+        background-color: rgb(20, 157, 221);
+        transform: scale(1.2);
+        text-decoration: none;
+    }
+
+    .side-nav,
+    .nav-menu {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .side-nav .nav-menu {
+        list-style: none;
+        padding: 40px 30px;
+        width: 200px;
+    }
+
+    .side-nav .nav-item {
+        position: relative;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+
+    button.btn.btn-sm.btn-dark {
+        padding: 5px 10px 5px 10px;
+        top: 10px;
+        right: 10px;
+        border: none;
+        position: absolute;
+        z-index: 11111;
+        float: right;
+    }
+
+    button.btn.btn-sm.btn-dark:hover {
+        background: #111;
+        color: #fff;
+    }
+
+    span.menu-text {
+        color: #a8a9b4;
+        padding-left: 10px;
+    }
+
+    span.menu-text:hover {
+        color: rgb(255, 255, 255);
+    }
+
+    li.nav-item a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 12px 15px;
+        font-size: 15px;
+    }
+
+    i.bx {
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+    }
+
+    li.nav-item a:hover i.bx {
+        color: royalblue;
+    }
+
+    #hero {
+        background-image: url(profile8.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+
+    #hero::before {
+        content: " ";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        /* background:rgba(5, 13, 24, 0.3); */
+        z-index: 1;
+    }
+
+    #hero p {
+        font-size: 26px;
+        font-family: "Poppins", sans-serif;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    #hero h1 {
+        color: #fff;
+        font-size: 3.5em;
+        font-family: "Poppins", sans-serif;
+    }
+
+    section.about {
+        padding: 60px 0;
+        overflow: hidden;
+    }
+
+    section.about-title {
+        padding-bottom: 30px;
+    }
+
+    /* #main {
+        padding-left: 300px;
+        overflow: hidden;
+    } */
+
+    .about-title h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        color: #173b6c;
+    }
+
+    .about-title h2::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 3px;
+        background: #149ddd;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    .about-title p {
+        font-size: 1.3em;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .about h3 {
+        font-weight: 700;
+        font-size: 26px;
+        color: #173b6c;
+    }
+
+    #about img {
+        max-width: 100%;
+        height: 50vh;
+    }
+
+    p.fst-italic {
+        font-style: italic !important;
+        font-size: 1.2em;
+    }
+
+    .about ul {
+        list-style: none;
+        padding: 0px;
+        margin-top: 10px;
+    }
+
+    .about ul li {
+        margin-bottom: 20px;
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .about ul strong {
+        font-weight: bolder;
+        margin-right: 10px;
+        font-size: 1.2em;
+    }
+
+    svg.iconify.iconify--akar-icons {
+        font-size: 22px;
+        margin-right: 5px;
+        color: rgb(20, 157, 221);
+        line-height: 0;
+    }
+
+    /* #facts {
+        padding-left: 300px;
+        overflow: hidden;
+    } */
+
+    .facts-title h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        color: #173b6c;
+    }
+
+    .facts-title h2::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 3px;
+        background: #149ddd;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    .facts-title p {
+        font-size: 1.3em;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .facts .count-box {
+        padding: 30px;
+        width: 100%;
+    }
+
+    i.bi.bi-emoji-smile {
+        display: block;
+        font-size: 44px;
+        color: #149ddd;
+        float: left;
+        line-height: 0;
+    }
+
+    i.bi.bi-journal-richtext {
+        display: block;
+        font-size: 44px;
+        color: #149ddd;
+        float: left;
+        line-height: 0;
+    }
+
+    i.bi.bi-headset {
+        display: block;
+        font-size: 44px;
+        color: #149ddd;
+        float: left;
+        line-height: 0;
+    }
+
+    i.bi.bi-people {
+        display: block;
+        font-size: 44px;
+        color: #149ddd;
+        float: left;
+        line-height: 0;
+    }
+
+    .loader {
+        font-size: 48px;
+        line-height: 40px;
+        display: block;
+        font-weight: 700;
+        color: #050d18;
+        margin-left: 60px;
+    }
+
+    .count-box p {
+        padding: 15px 0 0 0;
+        margin: 0 0 0 60px;
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        color: #122f57;
+    }
+
+    strong {
+        font-weight: bolder;
+    }
+    #skills {
+        /* padding-left: 300px; */
+        overflow: hidden;
+        background: #f5f8fd;
+    }
+    .container{
+        padding: 0px;
+    }
+
+    .skills-title h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        color: #173b6c;
+    }
+
+    .skills-title h2::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 3px;
+        background: #149ddd;
+        left: 0px;
+        bottom: 0px;
+    }
+    .common{
+        display: flex;
+        justify-content: center;
+    }
+    .skills-title p {
+        font-size: 1.3em;
+        font-family: "Poppins", sans-serif;
+    }
+    @media(max-width:1240px){
+        .hero-container{
+            position: relative;
+            right: 100px;
+        }
+    }
+    @media(max-width:1199px){
+        #about ul li{
+            font-size: 1.15em;
+        }
+    }
+    @media(max-width:1024px){
+        #hero {
+            background-image: url(profile8.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+        .hero-container{
+            position: relative;
+            right: 100px;
+        }
+        #about ul li{
+            font-size: 16px;
+        }
+        .count-box p{
+            font-size: 13px;
+        }
+        .skills-title p,.facts-title p, .about-title p{
+            font-size: 1.15em;
+        }
+    }
+    @media(max-width:991px){
+        #hero{
+            background-image: url(991px.jpg);
+        }
+        #hero h1{
+            font-size: 2.3em;
+            color: #000;
+        }
+        #hero p{
+            font-size: 1.9em;
+        }
+        .hero-container {
+            position: relative;
+            right: 90px;
+            top: 150px;
+            background: rgba(255,255,255,0.4);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #about ul li{
+            font-size: 16px;
+        }
+        .count-box p{
+            font-size: 13px;
+        }
+        .skills-title p,.facts-title p, .about-title p{
+            font-size: 1.15em;
+        }
+    }
+    @media(max-width:768px){
+        #hero{
+            background-image: url(991px.jpg);
+        }
+        #hero h1{
+            font-size: 2.5em;
+        }
+        #hero p{
+            font-size: 2em;
+        }
+        .hero-container {
+            position: relative;
+            right: 90px;
+            top: 100px;
+            background: rgba(255,255,255,0.4);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    }
+    @media(max-width:500px){
+        #hero{
+            background-image: url(500px.jpg);
+        }
+        .hero-container{
+            right: 0;
+            top: 98px;
+            left: 81px;
+        }
+        #hero h1{
+            font-size: 1.5em;
+        }
+        #hero p{
+            font-size: 1.5em;
+        }
+        #facts{
+            padding: 0px;
+        }
+        #about img{
+            width: 100%;
+        }
+        #skills{
+            padding: 0px;
+        }
+        #about{
+            padding: 0px;
+        }
+    }
+    @media(min-width:375px){
+        #hero{
+            background-image: url(350px.jpg);
+        }
+        .hero-container{
+            right: 0;
+            top: 98px;
+            left: 81px;
+            width: 50%;
+        }
+        #hero h1{
+            font-size: 1.5em;
+            color: #fff;
+        }
+        #hero p{
+            font-size: 1.5em;
+        }
+        #facts{
+            padding: 0px;
+        }
+        #about img{
+            width: 100%;
+        }
+        #skills{
+            padding: 0px;
+        }
+        #about{
+            padding: 0px;
+        }
+    }
+    @media(max-width:375px){
+        #hero{
+            background-image: url(350px.jpg);
+        }
+        .hero-container{
+            width: 60%;
+        }
+        #hero h1{
+            font-size: 1.5em;
+            color: #fff;
+        }
+        #hero p{
+            font-size: 1.2em;
+        }
+        #facts{
+            padding: 0px;
+        }
+        .about h3{
+            font-size: 23px;
+        }
+        .about-title h2{
+            font-size: 28px;
+        }
+        .facts-title h2{
+            font-size: 28px;
+        }
+        .skills-title h2{
+            font-size: 28px;
+        }
+    }
+    @media(max-width:350px){
+        #hero{
+            background-image: url(350px.jpg);
+        }
+        #hero h1{
+            font-size: 1.5em;
+            color: #fff;
+        }
+        #hero p{
+            font-size: 1.3em;
+        }
+        #facts{
+            padding: 0px;
+        }
+        #about img{
+            width: 100%;
+        }
+        #skills{
+            padding: 0px;
+        }
+        #about{
+            padding: 0px;
+        }
+        .about h3{
+            font-size: 23px;
+        }
+        .about-title h2{
+            font-size: 28px;
+        }
+        .facts-title h2{
+            font-size: 28px;
+        }
+        .skills-title h2{
+            font-size: 28px;
+        }
+    }
